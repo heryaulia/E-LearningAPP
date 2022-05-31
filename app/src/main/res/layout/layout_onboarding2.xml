@@ -9,7 +9,7 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="monospace"
+        android:fontFamily="@font/poppins_medium"
         android:paddingLeft="30dp"
         android:paddingRight="30dp"
         android:text="E-Learning merupakan sistem layanan pembelajaran offline dan online. E-Learning melayani pembelajaran dan pelatihan mahasiswa, dosen, dan tenaga kependidikan."
