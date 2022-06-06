@@ -26,8 +26,8 @@
         app:layout_constraintVertical_bias="0.202"
         app:srcCompat="@drawable/imgprofilakunsaya" />
 
-    <ImageButton
-        android:id="@+id/imageButton2"
+    <Button
+        android:id="@+id/button2"
         android:layout_width="155dp"
         android:layout_height="53dp"
         android:background="@drawable/btnonboard3"
@@ -37,6 +37,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.901" />
+        app:layout_constraintVertical_bias="0.908" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
