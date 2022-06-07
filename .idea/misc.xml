@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Project/ELearning/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3828125" />
+        <entry key="..\:/Project/ELearning/app/src/main/res/drawable/bg_rectangle_presensi.xml" value="0.3828125" />
         <entry key="..\:/Project/ELearning/app/src/main/res/drawable/btnonboard3.xml" value="0.3828125" />
         <entry key="..\:/Project/ELearning/app/src/main/res/drawable/ic_course.xml" value="0.3828125" />
         <entry key="..\:/Project/ELearning/app/src/main/res/drawable/ic_fingerprint.xml" value="0.3828125" />
@@ -13,7 +14,7 @@
         <entry key="..\:/Project/ELearning/app/src/main/res/layout/fragment_course.xml" value="0.36666666666666664" />
         <entry key="..\:/Project/ELearning/app/src/main/res/layout/fragment_home.xml" value="0.36666666666666664" />
         <entry key="..\:/Project/ELearning/app/src/main/res/layout/fragment_notification.xml" value="0.36666666666666664" />
-        <entry key="..\:/Project/ELearning/app/src/main/res/layout/fragment_presensi.xml" value="0.36666666666666664" />
+        <entry key="..\:/Project/ELearning/app/src/main/res/layout/fragment_presensi.xml" value="0.27943840579710144" />
         <entry key="..\:/Project/ELearning/app/src/main/res/layout/layout_akunsaya.xml" value="0.36666666666666664" />
         <entry key="..\:/Project/ELearning/app/src/main/res/layout/layout_login.xml" value="0.36666666666666664" />
         <entry key="..\:/Project/ELearning/app/src/main/res/layout/layout_onboarding1.xml" value="0.28396739130434784" />
