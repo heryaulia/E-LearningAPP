@@ -46,7 +46,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Username"
-
             app:endIconMode="clear_text"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
