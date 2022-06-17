@@ -3,6 +3,41 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Coding Project/ELearning/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3828125" />
+        <entry key="..\:/Coding Project/ELearning/app/src/main/res/drawable/bg_rectangle_presensi.xml" value="0.3828125" />
+        <entry key="..\:/Coding Project/ELearning/app/src/main/res/drawable/bgatas.xml" value="0.3145" />
+        <entry key="..\:/Coding Project/ELearning/app/src/main/res/drawable/btnonboard3.xml" value="0.3828125" />
+        <entry key="..\:/Coding Project/ELearning/app/src/main/res/drawable/ic_baseline_arrow_circle_right_24.xml" value="0.3828125" />
+        <entry key="..\:/Coding Project/ELearning/app/src/main/res/drawable/ic_course.xml" value="0.3828125" />
+        <entry key="..\:/Coding Project/ELearning/app/src/main/res/drawable/ic_course_teorikomputasi.xml" value="0.3145" />
+        <entry key="..\:/Coding Project/ELearning/app/src/main/res/drawable/ic_fingerprint.xml" value="0.3828125" />
+        <entry key="..\:/Coding Project/ELearning/app/src/main/res/drawable/ic_home.xml" value="0.3828125" />
+        <entry key="..\:/Coding Project/ELearning/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3828125" />
+        <entry key="..\:/Coding Project/ELearning/app/src/main/res/drawable/ic_notifications.xml" value="0.3828125" />
+        <entry key="..\:/Coding Project/ELearning/app/src/main/res/drawable/indicator_selected.xml" value="0.3828125" />
+        <entry key="..\:/Coding Project/ELearning/app/src/main/res/drawable/indicator_selector.xml" value="0.3828125" />
+        <entry key="..\:/Coding Project/ELearning/app/src/main/res/drawable/inidicator_default.xml" value="0.3828125" />
+        <entry key="..\:/Coding Project/ELearning/app/src/main/res/layout/activity_forgot_password.xml" value="0.23783783783783785" />
+        <entry key="..\:/Coding Project/ELearning/app/src/main/res/layout/activity_intro.xml" value="0.3663949275362319" />
+        <entry key="..\:/Coding Project/ELearning/app/src/main/res/layout/activity_login.xml" value="0.1991120218579235" />
+        <entry key="..\:/Coding Project/ELearning/app/src/main/res/layout/activity_main.xml" value="0.36277173913043476" />
+        <entry key="..\:/Coding Project/ELearning/app/src/main/res/layout/activity_on_boarding.xml" value="0.36277173913043476" />
+        <entry key="..\:/Coding Project/ELearning/app/src/main/res/layout/activity_register_user.xml" value="0.25" />
+        <entry key="..\:/Coding Project/ELearning/app/src/main/res/layout/activity_splash_screen.xml" value="0.36277173913043476" />
+        <entry key="..\:/Coding Project/ELearning/app/src/main/res/layout/fragment_course.xml" value="0.25" />
+        <entry key="..\:/Coding Project/ELearning/app/src/main/res/layout/fragment_dashboard.xml" value="0.23783783783783785" />
+        <entry key="..\:/Coding Project/ELearning/app/src/main/res/layout/fragment_home.xml" value="0.1991120218579235" />
+        <entry key="..\:/Coding Project/ELearning/app/src/main/res/layout/fragment_notification.xml" value="0.36277173913043476" />
+        <entry key="..\:/Coding Project/ELearning/app/src/main/res/layout/fragment_presensi.xml" value="0.25" />
+        <entry key="..\:/Coding Project/ELearning/app/src/main/res/layout/fragment_upload_task.xml" value="0.2287162162162162" />
+        <entry key="..\:/Coding Project/ELearning/app/src/main/res/layout/layout_akunsaya.xml" value="0.36277173913043476" />
+        <entry key="..\:/Coding Project/ELearning/app/src/main/res/layout/layout_onboarding1.xml" value="0.36277173913043476" />
+        <entry key="..\:/Coding Project/ELearning/app/src/main/res/layout/layout_onboarding2.xml" value="0.36277173913043476" />
+        <entry key="..\:/Coding Project/ELearning/app/src/main/res/layout/layout_onboarding3.xml" value="0.36277173913043476" />
+        <entry key="..\:/Coding Project/ELearning/app/src/main/res/layout/layout_screen.xml" value="0.36277173913043476" />
+        <entry key="..\:/Coding Project/ELearning/app/src/main/res/layout/recycler_view_row.xml" value="0.25" />
+        <entry key="..\:/Coding Project/ELearning/app/src/main/res/layout/slides_layout.xml" value="0.36277173913043476" />
+        <entry key="..\:/Coding Project/ELearning/app/src/main/res/menu/bottom_navigation.xml" value="0.23783783783783785" />
         <entry key="..\:/Project/ELearning/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3828125" />
         <entry key="..\:/Project/ELearning/app/src/main/res/drawable/bg_rectangle_presensi.xml" value="0.3828125" />
         <entry key="..\:/Project/ELearning/app/src/main/res/drawable/btnonboard3.xml" value="0.3828125" />
@@ -10,16 +45,31 @@
         <entry key="..\:/Project/ELearning/app/src/main/res/drawable/ic_fingerprint.xml" value="0.3828125" />
         <entry key="..\:/Project/ELearning/app/src/main/res/drawable/ic_home.xml" value="0.3828125" />
         <entry key="..\:/Project/ELearning/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3828125" />
+        <entry key="..\:/Project/ELearning/app/src/main/res/drawable/indicator_selected.xml" value="0.3828125" />
+        <entry key="..\:/Project/ELearning/app/src/main/res/drawable/indicator_selector.xml" value="0.3828125" />
+        <entry key="..\:/Project/ELearning/app/src/main/res/drawable/inidicator_default.xml" value="0.3828125" />
+        <entry key="..\:/Project/ELearning/app/src/main/res/drawable/login_bg.xml" value="0.3828125" />
+        <entry key="..\:/Project/ELearning/app/src/main/res/layout/activity_intro.xml" value="0.36666666666666664" />
+        <entry key="..\:/Project/ELearning/app/src/main/res/layout/activity_login.xml" value="0.36666666666666664" />
         <entry key="..\:/Project/ELearning/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Project/ELearning/app/src/main/res/layout/activity_on_boarding.xml" value="0.35260416666666666" />
+        <entry key="..\:/Project/ELearning/app/src/main/res/layout/activity_splash_screen.xml" value="0.33" />
         <entry key="..\:/Project/ELearning/app/src/main/res/layout/fragment_course.xml" value="0.36666666666666664" />
+        <entry key="..\:/Project/ELearning/app/src/main/res/layout/fragment_first.xml" value="0.36666666666666664" />
         <entry key="..\:/Project/ELearning/app/src/main/res/layout/fragment_home.xml" value="0.36666666666666664" />
         <entry key="..\:/Project/ELearning/app/src/main/res/layout/fragment_notification.xml" value="0.36666666666666664" />
         <entry key="..\:/Project/ELearning/app/src/main/res/layout/fragment_presensi.xml" value="0.27943840579710144" />
+        <entry key="..\:/Project/ELearning/app/src/main/res/layout/fragment_second.xml" value="0.36666666666666664" />
+        <entry key="..\:/Project/ELearning/app/src/main/res/layout/indicator_default.xml" value="0.36666666666666664" />
+        <entry key="..\:/Project/ELearning/app/src/main/res/layout/indicator_selected.xml" value="0.17831813576494426" />
+        <entry key="..\:/Project/ELearning/app/src/main/res/layout/indicator_selector.xml" value="0.17831813576494426" />
         <entry key="..\:/Project/ELearning/app/src/main/res/layout/layout_akunsaya.xml" value="0.36666666666666664" />
         <entry key="..\:/Project/ELearning/app/src/main/res/layout/layout_login.xml" value="0.36666666666666664" />
         <entry key="..\:/Project/ELearning/app/src/main/res/layout/layout_onboarding1.xml" value="0.28396739130434784" />
-        <entry key="..\:/Project/ELearning/app/src/main/res/layout/layout_onboarding2.xml" value="0.36666666666666664" />
+        <entry key="..\:/Project/ELearning/app/src/main/res/layout/layout_onboarding2.xml" value="0.2758152173913043" />
         <entry key="..\:/Project/ELearning/app/src/main/res/layout/layout_onboarding3.xml" value="0.36666666666666664" />
+        <entry key="..\:/Project/ELearning/app/src/main/res/layout/layout_screen.xml" value="0.36666666666666664" />
+        <entry key="..\:/Project/ELearning/app/src/main/res/layout/slides_layout.xml" value="0.36666666666666664" />
         <entry key="..\:/Project/ELearning/app/src/main/res/menu/bottom_navigation.xml" value="0.36666666666666664" />
       </map>
     </option>
@@ -29,5 +79,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.33" />
+      </ProjectState>
+    </option>
   </component>
 </project>

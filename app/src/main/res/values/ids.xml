@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="intro_img2" type="id" />
+    <item name="intro_description2" type="id" />
+    <item name="register" type="id" />
+    <item name="fragment_container_view" type="id" />
+</resources>

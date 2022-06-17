@@ -22,13 +22,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.709" />
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/imgonboarding2"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-134dp" />
+
 
     <ImageView
         android:id="@+id/imageView6"
@@ -52,5 +46,13 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.945"
         app:srcCompat="@drawable/arrowonboard2" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="120dp"
+        tools:srcCompat="@tools:sample/avatars" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

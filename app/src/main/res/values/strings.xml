@@ -1,5 +1,32 @@
 <resources>
     <string name="app_name">E-Learning</string>
+
+    <!--Descriptions-->
+    <string name="first_slide_desc">E-Learning merupakan sistem layanan pembelajaran offline dan online. E-Learning melayani pembelajaran dan pelatihan mahasiswa, dosen, dan tenaga kependidikan. </string>
+    <string name="second_slide_desc">App E-Learning ini merupakan pengembangan dari web E-learning Universitas Pattimura yang dilakukan  oleh Mahasiswa Studi Independen nongsa digital park .    </string>
+
+    <!--Buttons-->
+    <string name="skip_btn">Skip</string>
+    <string name="next_btn">Next</string>
+    <string name="let_get_started">Lets Get Started</string>
+
+
+    <string-array name="course_name_full_text">
+        <item>Teori Komputasi</item>
+        <item>Pemrograman Web 1</item>
+        <item>Datawarehouse</item>
+        <item>Metodologi Penelitian</item>
+        <item>Perancangan Database</item>
+    </string-array>
+
+    <string-array name="lesson_amount_full_text">
+        <item>16 Lesson</item>
+        <item>8 Lesson</item>
+        <item>16 Lesson</item>
+        <item>6 Lesson</item>
+        <item>10 Lesson</item>
+    </string-array>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
