@@ -1,5 +1,7 @@
 package com.example.e_learning;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -9,6 +11,7 @@ import androidx.viewpager2.widget.ViewPager2;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.google.android.material.tabs.TabLayout;
 
@@ -18,11 +21,15 @@ public class HomeFragment extends Fragment {
     private TabLayout tabLayout;
     private ViewPager2 viewPager2;
     private VPAdapter adapter;
+    Activity context;
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+        context = getActivity();
+
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
@@ -64,5 +71,18 @@ public class HomeFragment extends Fragment {
         });
 
         return view;
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        Button btnUserProfile = (Button) context.findViewById(R.id.btn_user_profile);
+        btnUserProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, UserProfile.class);
+                startActivity(intent);
+            }
+        });
     }
 }

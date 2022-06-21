@@ -1,5 +1,6 @@
 package com.example.e_learning;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -26,6 +27,7 @@ public class CourseFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_course, container, false);
+
         //Recycle View
         RecyclerView recyclerView = view.findViewById(R.id.mRecyclerView);
 

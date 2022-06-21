@@ -1,6 +1,7 @@
 package com.example.e_learning;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -59,6 +60,17 @@ public class Course_RecyclerViewAdapter extends RecyclerView.Adapter<Course_Recy
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
+
+            //dari course fragment ke course activity tapi bawa data belum bisa
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    // start new intent
+                    Intent intent = new Intent(v.getContext(), CourseActivity.class);
+                    intent.putExtra("title", getAdapterPosition()); //sending title of the card view
+                    v.getContext().startActivity(intent); //start new activity from view "v
+                }
+            });
 
             imageView = itemView.findViewById(R.id.imageView11);
             tvCourseName = itemView.findViewById(R.id.textView9);

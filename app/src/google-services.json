@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "145950820714",
+    "firebase_url": "https://e-learning-6f17a-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "e-learning-6f17a",
+    "storage_bucket": "e-learning-6f17a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:145950820714:android:9ab2ee3cf0b1105e7cbd13",
+        "android_client_info": {
+          "package_name": "com.example.e_learning"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "145950820714-of1m1kvmv426bg4ulcc4td8rkde7n5uf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.e_learning",
+            "certificate_hash": "aab02bddd839e109b8f275afe950ec768412025f"
+          }
+        },
+        {
+          "client_id": "145950820714-h8lrt8idlo4em9edn57o793t3v39qiht.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkKcrRD2ZH5SD2KWT8N_PRFo37qmJR1uc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "145950820714-h8lrt8idlo4em9edn57o793t3v39qiht.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

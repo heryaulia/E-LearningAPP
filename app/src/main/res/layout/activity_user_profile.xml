@@ -1,37 +1,258 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UserProfile">
+    tools:context=".UserProfile"
+    android:background="@drawable/bg_user_profile_full"
+    android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="128dp"
+        android:src="@drawable/imgprofilakunsaya"
+        app:civ_border_color="#FF000000" />
+
+    <TextView
+        android:id="@+id/tv_name_user"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_below="@id/profile_image"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Nama"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:background="#5cc09f">
+    <TextView
+        android:id="@+id/tv2_name_user"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/profile_image"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toEndOf="@+id/tv_name_user"
+        android:background="?attr/editTextBackground"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="Nama"
+        android:textAppearance="?android:attr/textAppearanceMediumInverse"
+        android:textColor="?attr/editTextColor" />
 
-            <ImageView
-                android:id="@+id/iv_profile_dp"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_centerInParent="true"
-                android:background="@drawable/imgprofilakunsaya"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+    <TextView
+        android:id="@+id/tv_nim_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name_user"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="23dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Nim"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv2_nim_user"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/tv_name_user"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toEndOf="@+id/tv_nim_user"
+        android:background="?attr/editTextBackground"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="Nim"
+        android:textAppearance="?android:attr/textAppearanceMediumInverse"
+        android:textColor="?attr/editTextColor" />
+
+    <TextView
+        android:id="@+id/tv_jurusan_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_nim_user"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="23dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Jurusan"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv2_jurusan_user"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/tv_nim_user"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toEndOf="@+id/tv_jurusan_user"
+        android:background="?attr/editTextBackground"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="Jurusan"
+        android:textAppearance="?android:attr/textAppearanceMediumInverse"
+        android:textColor="?attr/editTextColor" />
+
+    <TextView
+        android:id="@+id/tv_semester_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_jurusan_user"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Semester"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv2_semester_user"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/tv2_jurusan_user"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toEndOf="@+id/tv_semester_user"
+        android:background="?attr/editTextBackground"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="Semester"
+        android:textAppearance="?android:attr/textAppearanceMediumInverse"
+        android:textColor="?attr/editTextColor" />
+
+    <TextView
+        android:id="@+id/tv_email_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv2_semester_user"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="23dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Email"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tv2_email_user"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/tv2_semester_user"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toEndOf="@+id/tv_email_user"
+        android:background="?attr/editTextBackground"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="Email"
+        android:textAppearance="?android:attr/textAppearanceMediumInverse"
+        android:textColor="?attr/editTextColor" />
+
+    <TextView
+        android:id="@+id/tv_ipk_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv2_email_user"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="23dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="IPK"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tv2_ipk_user"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/tv2_email_user"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toEndOf="@+id/tv_ipk_user"
+        android:background="?attr/editTextBackground"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="IPK"
+        android:textAppearance="?android:attr/textAppearanceMediumInverse"
+        android:textColor="?attr/editTextColor" />
+
+    <TextView
+        android:id="@+id/tv_sks_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv2_ipk_user"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="23dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="SKS"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv2_sks_user"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/tv2_ipk_user"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toEndOf="@+id/tv_sks_user"
+        android:background="?attr/editTextBackground"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="SKS"
+        android:textAppearance="?android:attr/textAppearanceMediumInverse"
+        android:textColor="?attr/editTextColor" />
 
 
-        </RelativeLayout>
+    <Button
+        android:id="@+id/btn_profile"
+        android:layout_width="155dp"
+        android:layout_height="53dp"
+        android:layout_below="@id/tv2_sks_user"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="41dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/btnonboard3"
+        android:text="Edit Profile"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="155dp"
+        android:layout_height="53dp"
+        android:layout_below="@id/tv2_sks_user"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/btnonboard3"
+        android:text="Logout"
+        android:textColor="@color/white" />
 
 
-
-    </LinearLayout>
-
-
-</ScrollView>
+</RelativeLayout>

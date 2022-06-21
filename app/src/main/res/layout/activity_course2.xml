@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_courseactivity"
+    tools:context=".CourseActivity2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Course"
+            android:textSize="25sp"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#EEF8FF"
+        app:cardCornerRadius="20dp"
+        android:elevation="8dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_gambar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/img_course_teorikomputasi" />
+
+            <TextView
+                android:id="@+id/detailTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Teori Komputasi"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView12"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iv_gambar"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iv_gambar"
+                app:layout_constraintTop_toBottomOf="@+id/detailTitle"
+                app:srcCompat="@drawable/img_loading" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:elevation="20dp"
+        app:cardCornerRadius="15dp"
+        app:cardMaxElevation="100dp"
+        app:cardBackgroundColor="@color/biru">
+
+        <CheckedTextView
+            android:id="@+id/checkedTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:text="Pertemuan 1"
+            android:gravity="center_vertical"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:checked="true"
+            android:checkMark="?android:listChoiceIndicatorMultiple"/>
+    </com.google.android.material.card.MaterialCardView>
+
+    <CheckedTextView
+        android:id="@+id/textView25"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RPS"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="15sp"
+        android:gravity="center_vertical"
+        android:drawableStart="@drawable/ic_excel"
+        android:drawablePadding="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="?attr/editTextColor"
+        android:background="?attr/editTextBackground"
+        android:checked="true"
+        android:checkMark="?android:listChoiceIndicatorMultiple"/>
+
+    <CheckedTextView
+        android:id="@+id/textView26"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Materi Teori Komputasi"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="15sp"
+        android:gravity="center_vertical"
+        android:drawableStart="@drawable/ic_word"
+        android:drawablePadding="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="?attr/editTextColor"
+        android:background="?attr/editTextBackground"
+        android:checked="true"
+        android:checkMark="?android:listChoiceIndicatorMultiple"/>
+
+    <CheckedTextView
+        android:id="@+id/textView27"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PPT Materi Teori Komputasi"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="15sp"
+        android:gravity="center_vertical"
+        android:drawableStart="@drawable/ic_ppt"
+        android:drawablePadding="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="?attr/editTextColor"
+        android:background="?attr/editTextBackground"
+        android:checked="true"
+        android:checkMark="?android:listChoiceIndicatorMultiple"/>
+
+    <CheckedTextView
+        android:id="@+id/textView28"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload Tugas"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="15sp"
+        android:gravity="center_vertical"
+        android:drawableStart="@drawable/ic_add_folder"
+        android:drawablePadding="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="?attr/editTextColor"
+        android:background="?attr/editTextBackground"
+        android:checked="true"
+        android:checkMark="?android:listChoiceIndicatorMultiple" />
+
+
+</LinearLayout>

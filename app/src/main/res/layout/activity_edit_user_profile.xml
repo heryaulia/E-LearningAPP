@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditUserProfileActivity"
+    android:background="@drawable/bg_user_profile_full"
+    android:orientation="vertical">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="128dp"
+        android:src="@drawable/imgprofilakunsaya"
+        app:civ_border_color="#FF000000" />
+
+    <TextView
+        android:id="@+id/tv_name_edit_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_image"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Nama"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/et_name_edit_user"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/profile_image"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:hint="Nama"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/tv_nim_edit_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name_edit_user"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="23dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Nim"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/et_nim_edit_user"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/tv_name_edit_user"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:hint="Nim"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/tv_jurusan_edit_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_nim_edit_user"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="23dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Jurusan"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/et_jurusan_edit_user"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/tv_nim_edit_user"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Jurusan" />
+
+    <TextView
+        android:id="@+id/tv_semester_edit_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_jurusan_edit_user"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="23dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Semester"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/et_semester_edit_user"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/tv_jurusan_edit_user"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:hint="Semester"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/tv_email_edit_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_semester_edit_user"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="23dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Email"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/et_email_edit_user"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/et_semester_edit_user"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/tv_ipk_edit_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_email_edit_user"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="23dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="IPK"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/et_ipk_edit_user"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/et_email_edit_user"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:hint="IPK"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/tv_sks_edit_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_ipk_edit_user"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="23dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="SKS"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/et_sks_edit_user"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/et_ipk_edit_user"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:hint="SKS"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btn_save_data"
+        android:layout_width="155dp"
+        android:layout_height="53dp"
+        android:layout_below="@id/tv_sks_edit_user"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/btnonboard3"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Save"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>

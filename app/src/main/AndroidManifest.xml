@@ -14,6 +14,18 @@
         android:theme="@style/Theme.ELearning"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".CourseActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".PresenceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CourseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UploadTaskActivity"
+            android:exported="false" />
+        <activity
             android:name=".UserProfile"
             android:exported="false" />
         <activity

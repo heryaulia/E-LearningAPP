@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UploadTaskActivity">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Task"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_semibold"/>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tugas Pertemuan  Ke-4"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poppins_semibold"/>
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bacalah dan pahami materi pertemuan 4. Kemudian buatlah Resume/Ringkasan dan unggah di sini. Perhatikan Batas Waktu Pengunggahan. Tidak menerima pengunggahan melalui WA."
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:justificationMode="inter_word"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poppins_light"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submision Status"
+        android:textSize="20sp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poppins_semibold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submitted Status"
+        android:textSize="15sp"
+        android:layout_marginHorizontal="20dp"
+        android:fontFamily="@font/poppins"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:padding="20dp"
+        android:text="Submit for grading"
+        android:fontFamily="@font/poppins"
+        android:textSize="15sp"
+        android:background="@drawable/textview_border" />
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Submitted for grading"-->
+<!--        app:endIconMode="clear_text"-->
+<!--        android:layout_marginHorizontal="20dp"-->
+<!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/et_submitforgrading"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"/>-->
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:text="Grading Status"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:padding="20dp"
+        android:text="Not graded"
+        android:fontFamily="@font/poppins"
+        android:textSize="15sp"
+        android:background="@drawable/textview_border" />
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Not graded"-->
+<!--        app:endIconMode="clear_text"-->
+<!--        android:layout_marginHorizontal="20dp"-->
+<!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/et_graded"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"/>-->
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:text="Due Date"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:padding="20dp"
+        android:text="Sunday, 5 Mei 2002,23.59 "
+        android:fontFamily="@font/poppins"
+        android:textSize="15sp"
+        android:background="@drawable/textview_border" />
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Sunday, 5 Mei 2002,23.59 "-->
+<!--        app:endIconMode="clear_text"-->
+<!--        android:layout_marginHorizontal="20dp"-->
+<!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/et_duedate"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"/>-->
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:text="Time Remaining"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:padding="20dp"
+        android:text="3.30 Hours"
+        android:textSize="15sp"
+        android:background="@drawable/textview_border" />
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="5:38 Hours "-->
+<!--        app:endIconMode="clear_text"-->
+<!--        android:layout_marginHorizontal="20dp"-->
+<!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/et_timeRemaining"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"/>-->
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:text="Last Modified"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/black"/>
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="05.35 AM, Today"-->
+<!--        app:endIconMode="clear_text"-->
+<!--        android:layout_marginHorizontal="20dp"-->
+<!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/et_lastModified"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            tools:ignore="SpeakableTextPresentCheck" />-->
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:padding="20dp"
+        android:text="05.35 AM, Today"
+        android:textSize="15sp"
+        android:background="@drawable/textview_border" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Upload File"
+            android:background="@drawable/btnonboard3"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="#fff"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btnonboard3"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Submit"
+            android:layout_alignParentRight="true"
+            android:textAllCaps="false"
+            android:textColor="#fff" />
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

@@ -185,7 +185,7 @@ public class Login extends AppCompatActivity {
         if (TextUtils.isEmpty(email)) {
             Toast.makeText(getApplicationContext(),
                             "Please enter email!!",
-                            Toast.LENGTH_LONG)
+                            Toast.LENGTH_SHORT)
                     .show();
             return;
         }
@@ -193,7 +193,7 @@ public class Login extends AppCompatActivity {
         if (TextUtils.isEmpty(password)) {
             Toast.makeText(getApplicationContext(),
                             "Please enter password!!",
-                            Toast.LENGTH_LONG)
+                            Toast.LENGTH_SHORT)
                     .show();
             return;
         }
@@ -209,7 +209,7 @@ public class Login extends AppCompatActivity {
                                 if (task.isSuccessful()) {
                                     Toast.makeText(getApplicationContext(),
                                                     "Login successful!!",
-                                                    Toast.LENGTH_LONG)
+                                                    Toast.LENGTH_SHORT)
                                             .show();
 
 //                                    // hide the progress bar
@@ -229,7 +229,7 @@ public class Login extends AppCompatActivity {
                                     // sign-in failed
                                     Toast.makeText(getApplicationContext(),
                                                     "Login failed!!",
-                                                    Toast.LENGTH_LONG)
+                                                    Toast.LENGTH_SHORT)
                                             .show();
 
 //                                    // hide the progress bar

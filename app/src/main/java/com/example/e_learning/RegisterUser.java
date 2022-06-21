@@ -83,17 +83,11 @@ public class RegisterUser extends AppCompatActivity {
 
         // Validations for input email and password
         if (TextUtils.isEmpty(email)) {
-            Toast.makeText(getApplicationContext(),
-                            "Please enter email!!",
-                            Toast.LENGTH_LONG)
-                    .show();
+            Toast.makeText(getApplicationContext(), "Please enter email!!", Toast.LENGTH_LONG).show();
             return;
         }
         if (TextUtils.isEmpty(password)) {
-            Toast.makeText(getApplicationContext(),
-                            "Please enter password!!",
-                            Toast.LENGTH_LONG)
-                    .show();
+            Toast.makeText(getApplicationContext(), "Please enter password!!", Toast.LENGTH_LONG).show();
             return;
         }
 
@@ -104,16 +98,8 @@ public class RegisterUser extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task)
                     {
-
-
-
-
                         if (task.isSuccessful()) {
-
-                            Toast.makeText(getApplicationContext(),
-                                            "Registration successful!",
-                                            Toast.LENGTH_LONG)
-                                    .show();
+                            Toast.makeText(getApplicationContext(), "Registration successful!", Toast.LENGTH_LONG).show();
 
 //                            // hide the progress bar
 //                            progressBar.setVisibility(View.GONE);
@@ -134,12 +120,8 @@ public class RegisterUser extends AppCompatActivity {
                             }else {
                                 // Registration failed
                                 Toast.makeText(
-
-                                                getApplicationContext(),
-                                                "Registration failed!!"
-                                                        + " Please try again later",
-                                                Toast.LENGTH_LONG)
-                                        .show();
+                                        getApplicationContext(), "Registration failed!!"
+                                                        + " Please try again later", Toast.LENGTH_LONG).show();
 
                             }
 
