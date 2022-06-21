@@ -1,7 +1,9 @@
 package com.example.e_learning;
 
+import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -27,6 +29,16 @@ public class DashboardFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_dashboard, container, false);
+
+        CardView cardView1 = view.findViewById(R.id.cardView3);
+
+        cardView1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), TimelineTodayActivity.class);
+                startActivity(intent);
+            }
+        });
 
         //Recycle View
         RecyclerView recyclerView = view.findViewById(R.id.mRecyclerView);

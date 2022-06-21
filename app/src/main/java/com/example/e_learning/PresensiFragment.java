@@ -3,6 +3,7 @@ package com.example.e_learning;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -29,6 +30,16 @@ public class PresensiFragment extends Fragment {
         View view =  inflater.inflate(R.layout.fragment_presensi, container, false);
 
         Button btnPresenceHere = view.findViewById(R.id.button3);
+
+        CardView cardView1 = view.findViewById(R.id.cardView2);
+
+        cardView1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), ViewPresenceActivity.class);
+                startActivity(intent);
+            }
+        });
 
         btnPresenceHere.setOnClickListener(new View.OnClickListener() {
             @Override
