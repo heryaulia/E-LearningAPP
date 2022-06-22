@@ -131,6 +131,7 @@
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv_uploadtask2"
         android:layout_width="match_parent"
         android:layout_height="76dp"
         android:background="@color/white"
@@ -153,7 +154,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
                 android:fontFamily="@font/poppins_medium"
-                android:text="Pertemuan Ke-5"
+                android:text="Pertemuan Ke-6"
                 android:textColor="@color/black"
                 android:textSize="13sp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -189,6 +190,7 @@
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv_uploadtask3"
         android:layout_width="match_parent"
         android:layout_height="76dp"
         android:background="@color/white"
@@ -211,7 +213,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
                 android:fontFamily="@font/poppins_medium"
-                android:text="Pertemuan Ke-6"
+                android:text="Pertemuan Ke-7"
                 android:textColor="@color/black"
                 android:textSize="13sp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -248,6 +250,7 @@
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv_uploadtask4"
         android:layout_width="match_parent"
         android:layout_height="76dp"
         android:background="@color/white"
@@ -270,7 +273,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
                 android:fontFamily="@font/poppins_medium"
-                android:text="Pertemuan Ke-6"
+                android:text="Pertemuan Ke-8"
                 android:textColor="@color/black"
                 android:textSize="13sp"
                 app:layout_constraintStart_toStartOf="parent"

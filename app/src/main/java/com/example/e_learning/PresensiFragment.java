@@ -18,10 +18,10 @@ import java.util.ArrayList;
 
 public class PresensiFragment extends Fragment {
 
-    //Recycle View
-    ArrayList<CourseModel> courseModels = new ArrayList<>();
-
-    int[] courseImages = {R.drawable.img_course_teorikomputasi};
+//    //Recycle View
+//    ArrayList<CourseModel> courseModels = new ArrayList<>();
+//
+//    int[] courseImages = {R.drawable.img_course_teorikomputasi, R.drawable.img_recycleview_2, R.drawable.img_recycleview_3, R.drawable.img_recycleview_4,R.drawable.img_recycleview_5};
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -49,29 +49,29 @@ public class PresensiFragment extends Fragment {
             }
         });
 
-        //Recycle View
-        RecyclerView recyclerView = view.findViewById(R.id.mRecyclerView);
-
-        setUpCourseModels();
-
-        Course_RecyclerViewAdapter adapter = new Course_RecyclerViewAdapter(view.getContext(), courseModels);
-
-        recyclerView.setAdapter(adapter);
-        recyclerView.setLayoutManager(new LinearLayoutManager(view.getContext()));
+//        //Recycle View
+//        RecyclerView recyclerView = view.findViewById(R.id.mRecyclerView);
+//
+//        setUpCourseModels();
+//
+//        Course_RecyclerViewAdapter adapter = new Course_RecyclerViewAdapter(view.getContext(), courseModels);
+//
+//        recyclerView.setAdapter(adapter);
+//        recyclerView.setLayoutManager(new LinearLayoutManager(view.getContext()));
 
         return view;
     }
 
-    //Recycle View
-    private void setUpCourseModels(){
-        String[] courseNames = getResources().getStringArray(R.array.course_name_full_text);
-        String[] lessonAmounts = getResources().getStringArray(R.array.lesson_amount_full_text);
-
-        Log.e("Course Name", String.valueOf(courseNames.length));
-
-        for (int i = 0; i <= (courseNames.length -1); i++){
-            courseModels.add(new CourseModel(courseNames[i], lessonAmounts[i], courseImages[0]));
-        }
-
-    }
+//    //Recycle View
+//    private void setUpCourseModels(){
+//        String[] courseNames = getResources().getStringArray(R.array.course_name_full_text);
+//        String[] lessonAmounts = getResources().getStringArray(R.array.lesson_amount_full_text);
+//
+//        Log.e("Course Name", String.valueOf(courseNames.length));
+//
+//        for (int i = 0; i <= (courseNames.length -1); i++){
+//            courseModels.add(new CourseModel(courseNames[i], lessonAmounts[i], courseImages[i]));
+//        }
+//
+//    }
 }

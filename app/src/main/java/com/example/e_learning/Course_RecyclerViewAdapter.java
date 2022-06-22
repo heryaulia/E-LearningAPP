@@ -15,12 +15,15 @@ import java.util.ArrayList;
 
 public class Course_RecyclerViewAdapter extends RecyclerView.Adapter<Course_RecyclerViewAdapter.MyViewHolder> {
 
+    private final RecyclerViewInterface recyclerViewInterface;
+
     Context context;
     ArrayList<CourseModel> courseModels;
 
-    public Course_RecyclerViewAdapter(Context context, ArrayList<CourseModel> courseModels){
+    public Course_RecyclerViewAdapter(Context context, ArrayList<CourseModel> courseModels, RecyclerViewInterface recyclerViewInterface){
         this.context = context;
         this.courseModels = courseModels;
+        this.recyclerViewInterface = recyclerViewInterface;
 
     }
 
@@ -31,7 +34,7 @@ public class Course_RecyclerViewAdapter extends RecyclerView.Adapter<Course_Recy
         LayoutInflater inflater = LayoutInflater.from(context);
         View view = inflater.inflate(R.layout.recycler_view_row, parent, false );
 
-        return new Course_RecyclerViewAdapter.MyViewHolder(view);
+        return new Course_RecyclerViewAdapter.MyViewHolder(view, recyclerViewInterface);
     }
 
     @Override
@@ -51,31 +54,34 @@ public class Course_RecyclerViewAdapter extends RecyclerView.Adapter<Course_Recy
         return courseModels.size();
     }
 
-    public static class MyViewHolder extends RecyclerView.ViewHolder{
+    public  static class MyViewHolder extends RecyclerView.ViewHolder{
         //grabbing the views from our recycler_view_row layout file
         //kinda like onCreate method
 
         ImageView imageView;
         TextView tvCourseName, tvLessonAmount;
 
-        public MyViewHolder(@NonNull View itemView) {
+        public MyViewHolder(@NonNull View itemView, RecyclerViewInterface recyclerViewInterface) {
             super(itemView);
-
-            //dari course fragment ke course activity tapi bawa data belum bisa
-            itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    // start new intent
-                    Intent intent = new Intent(v.getContext(), CourseActivity.class);
-                    intent.putExtra("title", getAdapterPosition()); //sending title of the card view
-                    v.getContext().startActivity(intent); //start new activity from view "v
-                }
-            });
 
             imageView = itemView.findViewById(R.id.imageView11);
             tvCourseName = itemView.findViewById(R.id.textView9);
             tvLessonAmount = itemView.findViewById(R.id.textView10);
 
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (recyclerViewInterface != null) {
+                        int position = getAdapterPosition();
+
+                        if (position != RecyclerView.NO_POSITION){
+                            recyclerViewInterface.onItemClick(position);
+                        }
+
+                    }
+                }
+            });
 
         }
     }

@@ -33,7 +33,7 @@
         android:id="@+id/textView13"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Bacalah dan pahami materi pertemuan 4. Kemudian buatlah Resume/Ringkasan dan unggah di sini. Perhatikan Batas Waktu Pengunggahan. Tidak menerima pengunggahan melalui WA."
+        android:text="Bacalah dan pahami materi pertemuan. Kemudian buatlah Resume/Ringkasan dan unggah di sini. Perhatikan Batas Waktu Pengunggahan. Tidak menerima pengunggahan melalui WA."
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="10dp"
         android:textSize="15sp"

@@ -26,7 +26,41 @@
         <item>6 Lesson</item>
         <item>10 Lesson</item>
     </string-array>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="pertemuan_ke_full_text">
+        <item>Pertemuan 1</item>
+        <item>Pertemuan 2</item>
+        <item>Pertemuan 3</item>
+        <item>Pertemuan 4</item>
+    </string-array>
+
+    <string-array name="tgl_pertemuan_full_text">
+        <item>Pertemuan 1</item>
+        <item>Pertemuan 2</item>
+        <item>Pertemuan 3</item>
+        <item>Pertemuan 4</item>
+    </string-array>
+
+    <string-array name="jam_checkin_fulltext">
+        <item>Pertemuan 1</item>
+        <item>Pertemuan 2</item>
+        <item>Pertemuan 3</item>
+        <item>Pertemuan 4</item>
+    </string-array>
+
+    <string-array name="jam_checkout_fulltext">
+        <item>Pertemuan 1</item>
+        <item>Pertemuan 2</item>
+        <item>Pertemuan 3</item>
+        <item>Pertemuan 4</item>
+    </string-array>
+
+    <string-array name="status_absen_full_text">
+        <item>Pertemuan 1</item>
+        <item>Pertemuan 2</item>
+        <item>Pertemuan 3</item>
+        <item>Pertemuan 4</item>
+    </string-array>
+
 
 </resources>

@@ -27,6 +27,7 @@ public class UserProfile extends AppCompatActivity {
     private TextView tvName, tvNim,tvJurusan,tvSemester, tvEmail,tvIpk,tvSks;
     Button btnSignout, btnEditUser;
     FirebaseAuth mAuth;
+    FirebaseUser firebaseUser;
     private String fullName, nim, jurusan, semester, email, ipk, sks;
     private ImageView imageView;
 
@@ -36,7 +37,7 @@ public class UserProfile extends AppCompatActivity {
         setContentView(R.layout.activity_user_profile);
 
         mAuth = FirebaseAuth.getInstance();
-        FirebaseUser firebaseUser = mAuth.getCurrentUser();
+        firebaseUser = mAuth.getCurrentUser();
         tvName = findViewById(R.id.tv2_name_user);
         tvNim = findViewById(R.id.tv2_nim_user);
         tvJurusan =findViewById(R.id.tv2_jurusan_user);
@@ -53,13 +54,15 @@ public class UserProfile extends AppCompatActivity {
             showUserProfile(firebaseUser);
         }
 
-//        btnEditUser.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(UserProfile.this, EditUserProfileActivity.class);
-//                startActivity(intent);
-//            }
-//        });
+        tvEmail.setText(firebaseUser.getEmail());
+
+        btnEditUser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(UserProfile.this, EditUserProfileActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
         btnSignout.setOnClickListener(new View.OnClickListener() {

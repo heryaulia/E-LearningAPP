@@ -38,6 +38,9 @@
             android:name=".UserProfile"
             android:exported="false" />
         <activity
+            android:name=".EditUserProfileActivity"
+            android:exported="false"/>
+        <activity
             android:name=".ForgotPassword"
             android:exported="false" />
         <activity android:name=".RegisterUser" />

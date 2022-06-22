@@ -16,12 +16,12 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 
 
-public class DashboardFragment extends Fragment {
+public class DashboardFragment extends Fragment implements RecyclerViewInterface{
 
     //Recycle View
     ArrayList<CourseModel> courseModels = new ArrayList<>();
 
-    int[] courseImages = {R.drawable.img_course_teorikomputasi};
+    int[] courseImages = {R.drawable.img_course_teorikomputasi, R.drawable.img_recycleview_2, R.drawable.img_recycleview_3, R.drawable.img_recycleview_4,R.drawable.img_recycleview_5};
 
 
     @Override
@@ -30,8 +30,8 @@ public class DashboardFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_dashboard, container, false);
 
+        //card view intent timeline today
         CardView cardView1 = view.findViewById(R.id.cardView3);
-
         cardView1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -45,7 +45,7 @@ public class DashboardFragment extends Fragment {
 
         setUpCourseModels();
 
-        Course_RecyclerViewAdapter adapter = new Course_RecyclerViewAdapter(view.getContext(), courseModels);
+        Course_RecyclerViewAdapter adapter = new Course_RecyclerViewAdapter(view.getContext(), courseModels,this);
 
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(view.getContext()));
@@ -61,8 +61,21 @@ public class DashboardFragment extends Fragment {
         Log.e("Course Name", String.valueOf(courseNames.length));
 
         for (int i = 0; i <= (courseNames.length -1); i++){
-            courseModels.add(new CourseModel(courseNames[i], lessonAmounts[i], courseImages[0]));
+            courseModels.add(new CourseModel(courseNames[i], lessonAmounts[i], courseImages[i]));
         }
+
+    }
+
+    @Override
+    public void onItemClick(int position) {
+
+        // intent title and image to course activity
+        Intent intent = new Intent(getActivity(), CourseActivity.class);
+
+        intent.putExtra("NAME", courseModels.get(position).getCourseName());
+        intent.putExtra("IMAGE", courseModels.get(position).getImage());
+
+        startActivity(intent);
 
     }
 }

@@ -8,12 +8,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckedTextView;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class CourseActivity extends AppCompatActivity {
 
     TextView textTitle;
+    ImageView imageView;
     CheckedTextView checkedTextView1, checkedTextView2, checkedTextView3, checkedTextView4;
 
     @Override
@@ -21,6 +23,18 @@ public class CourseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_course);
 
+        //untuk ambil data dari intent course fragment
+        String name = getIntent().getStringExtra("NAME");
+        int image = getIntent().getIntExtra("IMAGE", 0);
+
+        textTitle = findViewById(R.id.detailTitle);
+        imageView = findViewById(R.id.iv_gambar);
+
+        textTitle.setText(name);
+        imageView.setImageResource(image);
+
+
+        //intent cardview pertama ke course activity 2
         CardView cardView1 = (CardView) findViewById(R.id.cv_course_pertama);
         cardView1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,11 +45,6 @@ public class CourseActivity extends AppCompatActivity {
             }
         });
 
-        //ambil data dari recycle view adapter tapi belom bisa
-//        textTitle = findViewById(R.id.detailTitle);
-//        Intent intent = getIntent();
-//        String title = intent.getStringExtra("title");
-//        textTitle.setText(title);
 
         //checked text view
         checkedTextView1 = findViewById(R.id.checkedTextView);
