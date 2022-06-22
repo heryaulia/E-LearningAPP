@@ -1,15 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1B4541"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_courseactivity"
+    android:orientation="vertical"
     tools:context=".NotificationFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Notification fragment" />
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20sp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Notification"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
 
-</RelativeLayout>
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Sudah dibaca"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv_notification1"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:background="@color/white"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:elevation="20dp"
+        app:cardCornerRadius="15dp"
+        app:cardMaxElevation="100dp"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/biru">
+
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Selamat pagi, jangan lupa presensi ya!"
+            android:textSize="15sp"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv_notification2"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:background="@color/white"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:elevation="20dp"
+        app:cardCornerRadius="15dp"
+        app:cardMaxElevation="100dp"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/biru">
+
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Kelas akan dimulai dalam 10 menit!"
+            android:textSize="15sp"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv_notification3"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:background="@color/white"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:elevation="20dp"
+        app:cardCornerRadius="15dp"
+        app:cardMaxElevation="100dp"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/biru">
+
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="You have submitteed your assignment fot tugas teori komputasi"
+            android:paddingHorizontal="20dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>

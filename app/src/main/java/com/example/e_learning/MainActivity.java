@@ -57,6 +57,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case R.id.nav_presensi:
                         selectedFragment = new PresensiFragment();
+                        break;
+                    case R.id.nav_notification:
+                        selectedFragment = new NotificationFragment();
                 }
 
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectedFragment).commit();
