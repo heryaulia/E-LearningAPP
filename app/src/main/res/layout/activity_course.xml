@@ -113,7 +113,7 @@
             android:textSize="15sp"
             android:textColor="@color/white"
             android:layout_gravity="center"
-            android:checked="true"
+            android:checked="false"
             android:checkMark="?android:listChoiceIndicatorMultiple"/>
     </com.google.android.material.card.MaterialCardView>
 
@@ -139,7 +139,7 @@
             android:textSize="15sp"
             android:textColor="@color/white"
             android:layout_gravity="center"
-            android:checked="true"
+            android:checked="false"
             android:checkMark="?android:listChoiceIndicatorMultiple"/>
     </com.google.android.material.card.MaterialCardView>
 
@@ -165,7 +165,7 @@
             android:textSize="15sp"
             android:textColor="@color/white"
             android:layout_gravity="center"
-            android:checked="true"
+            android:checked="false"
             android:checkMark="?android:listChoiceIndicatorMultiple"/>
     </com.google.android.material.card.MaterialCardView>
 
@@ -191,7 +191,7 @@
             android:textSize="15sp"
             android:textColor="@color/white"
             android:layout_gravity="center"
-            android:checked="true"
+            android:checked="false"
             android:checkMark="?android:listChoiceIndicatorMultiple"/>
     </com.google.android.material.card.MaterialCardView>
 

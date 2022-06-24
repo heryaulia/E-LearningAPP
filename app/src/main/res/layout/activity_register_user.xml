@@ -62,10 +62,11 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <EditText
-                android:id="@+id/input_username_register"
+                android:id="@+id/input_nim_register"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Username" />
+                android:hint="Nim"
+                android:inputType="number"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -96,46 +97,46 @@
                 android:inputType="textPassword"/>
         </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:endIconMode="clear_text"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            app:endIconMode="clear_text"-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">-->
 
-            <EditText
-                android:id="@+id/input_nim_register"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Nim"
-                android:inputType="number"/>
-        </com.google.android.material.textfield.TextInputLayout>
+<!--            <EditText-->
+<!--                android:id="@+id/input_nim_register"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:hint="Nim"-->
+<!--                android:inputType="number"/>-->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:endIconMode="clear_text"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            app:endIconMode="clear_text"-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">-->
 
-            <EditText
-                android:id="@+id/input_jurusan_register"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Jurusan" />
-        </com.google.android.material.textfield.TextInputLayout>
+<!--            <EditText-->
+<!--                android:id="@+id/input_jurusan_register"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:hint="Jurusan" />-->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:endIconMode="clear_text"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            app:endIconMode="clear_text"-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">-->
 
-            <EditText
-                android:id="@+id/input_semester_register"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Semester"
-                android:inputType="number"/>
-        </com.google.android.material.textfield.TextInputLayout>
+<!--            <EditText-->
+<!--                android:id="@+id/input_semester_register"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:hint="Semester"-->
+<!--                android:inputType="number"/>-->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
 
 
         <Button

@@ -23,13 +23,13 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="Jennie Aurelie"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        android:layout_marginTop="20dp"
+        android:layout_below="@id/textView7"
         android:layout_marginStart="20dp"
-        android:layout_below="@id/textView7" />
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="20sp" />
 
 
     <androidx.cardview.widget.CardView

@@ -13,6 +13,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.FirebaseException;
 import com.google.firebase.auth.AuthResult;
@@ -21,12 +23,20 @@ import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class RegisterUser extends AppCompatActivity {
 
+    public static final String TAG = "TAG";
     private FirebaseAuth mAuth;
-    private EditText nameTextView, emailTextView, passwordTextView;
+    private EditText nameEditText, nimEditText, emailEditText, passwordEditText;
     private Button btnregister, btnloginnow;
+    private FirebaseFirestore mStore;
+    private String userID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,10 +45,12 @@ public class RegisterUser extends AppCompatActivity {
 
         // taking FirebaseAuth instance
         mAuth = FirebaseAuth.getInstance();
+        mStore = FirebaseFirestore.getInstance();
 
-//        nameTextView = findViewById(R.id.input_full_name_register);
-        emailTextView = findViewById(R.id.input_email_register);
-        passwordTextView = findViewById(R.id.input_password_register);
+        nameEditText = findViewById(R.id.input_full_name_register);
+        nimEditText = findViewById(R.id.input_nim_register);
+        emailEditText = findViewById(R.id.input_email_register);
+        passwordEditText = findViewById(R.id.input_password_register);
         btnregister = findViewById(R.id.btn_register);
         btnloginnow = findViewById(R.id.btn_login_now);
 
@@ -77,9 +89,11 @@ public class RegisterUser extends AppCompatActivity {
 //        progressbar.setVisibility(View.VISIBLE);
 
         // Take the value of two edit texts in Strings
-        String email, password;
-        email = emailTextView.getText().toString();
-        password = passwordTextView.getText().toString();
+        String email, password, fullName, nim;
+        email = emailEditText.getText().toString();
+        password = passwordEditText.getText().toString();
+        fullName = nameEditText.getText().toString();
+        nim = nimEditText.getText().toString();
 
         // Validations for input email and password
         if (TextUtils.isEmpty(email)) {
@@ -100,14 +114,31 @@ public class RegisterUser extends AppCompatActivity {
                     {
                         if (task.isSuccessful()) {
                             Toast.makeText(getApplicationContext(), "Registration successful!", Toast.LENGTH_LONG).show();
+                            userID = mAuth.getCurrentUser().getUid();
+                            DocumentReference documentReference = mStore.collection("Users").document(userID);
+                            Map<String, Object> user = new HashMap<>();
+                            user.put("fullName", fullName);
+                            user.put("nim", nim);
+                            user.put("email",email);
+                            documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                @Override
+                                public void onSuccess(Void unused) {
+                                    Log.d(TAG, "onSuccess: User Profile is created" + userID);
+                                }
+                            });
+                            documentReference.set(user).addOnFailureListener(new OnFailureListener() {
+                                @Override
+                                public void onFailure(@NonNull Exception e) {
+                                    Log.d(TAG, "onFailure: " + e.toString());
+                                }
+                            });
+
 
 //                            // hide the progress bar
 //                            progressBar.setVisibility(View.GONE);
 
                             // if the user created intent to login activity
-                            Intent intent
-                                    = new Intent(RegisterUser.this,
-                                    Login.class);
+                            Intent intent = new Intent(RegisterUser.this, Login.class);
                             startActivity(intent);
                         }
                         else {

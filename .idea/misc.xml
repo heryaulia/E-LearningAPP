@@ -31,11 +31,12 @@
         <entry key="..\:/Coding Project/ELearning/app/src/main/res/drawable/textview_border.xml" value="0.2965" />
         <entry key="..\:/Coding Project/ELearning/app/src/main/res/layout/activity_course.xml" value="0.23783783783783785" />
         <entry key="..\:/Coding Project/ELearning/app/src/main/res/layout/activity_course2.xml" value="0.23783783783783785" />
-        <entry key="..\:/Coding Project/ELearning/app/src/main/res/layout/activity_edit_user_profile.xml" value="0.1991120218579235" />
+        <entry key="..\:/Coding Project/ELearning/app/src/main/res/layout/activity_edit_user_profile.xml" value="0.18169398907103826" />
         <entry key="..\:/Coding Project/ELearning/app/src/main/res/layout/activity_forgot_password.xml" value="0.23783783783783785" />
         <entry key="..\:/Coding Project/ELearning/app/src/main/res/layout/activity_intro.xml" value="0.3663949275362319" />
         <entry key="..\:/Coding Project/ELearning/app/src/main/res/layout/activity_login.xml" value="0.1991120218579235" />
         <entry key="..\:/Coding Project/ELearning/app/src/main/res/layout/activity_main.xml" value="0.1991120218579235" />
+        <entry key="..\:/Coding Project/ELearning/app/src/main/res/layout/activity_modern_onboarding.xml" value="0.23783783783783785" />
         <entry key="..\:/Coding Project/ELearning/app/src/main/res/layout/activity_on_boarding.xml" value="0.36277173913043476" />
         <entry key="..\:/Coding Project/ELearning/app/src/main/res/layout/activity_presence.xml" value="0.23783783783783785" />
         <entry key="..\:/Coding Project/ELearning/app/src/main/res/layout/activity_register_user.xml" value="0.25" />
@@ -53,9 +54,9 @@
         <entry key="..\:/Coding Project/ELearning/app/src/main/res/layout/fragment_presensi.xml" value="0.25" />
         <entry key="..\:/Coding Project/ELearning/app/src/main/res/layout/fragment_upload_task.xml" value="0.2287162162162162" />
         <entry key="..\:/Coding Project/ELearning/app/src/main/res/layout/layout_akunsaya.xml" value="0.25" />
-        <entry key="..\:/Coding Project/ELearning/app/src/main/res/layout/layout_onboarding1.xml" value="0.36277173913043476" />
-        <entry key="..\:/Coding Project/ELearning/app/src/main/res/layout/layout_onboarding2.xml" value="0.36277173913043476" />
-        <entry key="..\:/Coding Project/ELearning/app/src/main/res/layout/layout_onboarding3.xml" value="0.36277173913043476" />
+        <entry key="..\:/Coding Project/ELearning/app/src/main/res/layout/layout_onboarding1.xml" value="0.23783783783783785" />
+        <entry key="..\:/Coding Project/ELearning/app/src/main/res/layout/layout_onboarding2.xml" value="0.23783783783783785" />
+        <entry key="..\:/Coding Project/ELearning/app/src/main/res/layout/layout_onboarding3.xml" value="0.23783783783783785" />
         <entry key="..\:/Coding Project/ELearning/app/src/main/res/layout/layout_screen.xml" value="0.36277173913043476" />
         <entry key="..\:/Coding Project/ELearning/app/src/main/res/layout/recycler_view_row.xml" value="0.25" />
         <entry key="..\:/Coding Project/ELearning/app/src/main/res/layout/recycler_view_row_presence.xml" value="0.23716216216216215" />

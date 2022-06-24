@@ -1,19 +1,33 @@
 package com.example.e_learning;
 
+import static com.example.e_learning.RegisterUser.TAG;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.viewpager2.widget.ViewPager2;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.tabs.TabLayout;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.EventListener;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.FirebaseFirestoreException;
+
+import java.util.concurrent.Executor;
 
 
 public class HomeFragment extends Fragment {
@@ -22,16 +36,32 @@ public class HomeFragment extends Fragment {
     private ViewPager2 viewPager2;
     private VPAdapter adapter;
     Activity context;
+    FirebaseAuth mAuth;
+    FirebaseFirestore mStore;
+    private String userID;
+    TextView tvName;
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
         context = getActivity();
-
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
+
+        mAuth = FirebaseAuth.getInstance();
+        mStore = FirebaseFirestore.getInstance();
+        userID = mAuth.getCurrentUser().getUid();
+        tvName = view.findViewById(R.id.textView24);
+
+        //fetch name from firestore
+        final DocumentReference docRef = mStore.collection("Users").document(userID);
+        docRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+            @Override
+            public void onSuccess(DocumentSnapshot documentSnapshot) {
+                tvName.setText(documentSnapshot.getString("fullName"));
+            }
+        });
 
         tabLayout = view.findViewById(R.id.tabLayout);
         viewPager2 = view.findViewById(R.id.viewPagerTab);
@@ -45,7 +75,6 @@ public class HomeFragment extends Fragment {
         viewPager2.setAdapter(adapter);
 
         //tabLayout.setTabsFromPagerAdapter(adapter);
-
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {

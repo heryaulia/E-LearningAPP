@@ -51,13 +51,13 @@
             android:id="@+id/textView24"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Jennie Aurelia"
+            android:layout_below="@id/textView23"
             android:layout_marginLeft="20dp"
-            android:fontFamily="@font/poppins_semibold"
-            android:textColor="@color/white"
-            android:textSize="20sp"
             android:layout_toRightOf="@id/btn_user_profile"
-            android:layout_below="@id/textView23"/>
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Jennie Aurelia"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
 
 
     </RelativeLayout>

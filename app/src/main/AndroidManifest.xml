@@ -14,6 +14,9 @@
         android:theme="@style/Theme.ELearning"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".ModernOnboarding"
+            android:exported="false" />
+        <activity
             android:name=".TimelineTodayActivity"
             android:exported="false" />
         <activity
@@ -39,7 +42,7 @@
             android:exported="false" />
         <activity
             android:name=".EditUserProfileActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".ForgotPassword"
             android:exported="false" />

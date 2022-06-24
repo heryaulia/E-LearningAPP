@@ -113,7 +113,7 @@
             android:textSize="15sp"
             android:textColor="@color/white"
             android:layout_gravity="center"
-            android:checked="true"
+            android:checked="false"
             android:checkMark="?android:listChoiceIndicatorMultiple"/>
     </com.google.android.material.card.MaterialCardView>
 
@@ -131,7 +131,7 @@
         android:layout_marginTop="20dp"
         android:textColor="?attr/editTextColor"
         android:background="?attr/editTextBackground"
-        android:checked="true"
+        android:checked="false"
         android:checkMark="?android:listChoiceIndicatorMultiple"/>
 
     <CheckedTextView
@@ -148,7 +148,7 @@
         android:layout_marginTop="20dp"
         android:textColor="?attr/editTextColor"
         android:background="?attr/editTextBackground"
-        android:checked="true"
+        android:checked="false"
         android:checkMark="?android:listChoiceIndicatorMultiple"/>
 
     <CheckedTextView
@@ -165,7 +165,7 @@
         android:layout_marginTop="20dp"
         android:textColor="?attr/editTextColor"
         android:background="?attr/editTextBackground"
-        android:checked="true"
+        android:checked="false"
         android:checkMark="?android:listChoiceIndicatorMultiple"/>
 
     <CheckedTextView
@@ -182,7 +182,7 @@
         android:layout_marginTop="20dp"
         android:textColor="?attr/editTextColor"
         android:background="?attr/editTextBackground"
-        android:checked="true"
+        android:checked="false"
         android:checkMark="?android:listChoiceIndicatorMultiple" />
 
 
