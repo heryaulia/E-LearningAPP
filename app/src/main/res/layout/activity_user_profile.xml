@@ -14,7 +14,7 @@
         android:layout_height="150dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="128dp"
-        android:src="@drawable/imgprofilakunsaya"
+        android:src="@drawable/avatar"
         app:civ_border_color="#FF000000" />
 
     <TextView
@@ -251,11 +251,11 @@
             android:id="@+id/btn_logout"
             android:layout_width="155dp"
             android:layout_height="53dp"
+            android:layout_marginStart="28dp"
             android:background="@drawable/bg_btn_logout"
             android:text="Logout"
             android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:layout_marginStart="28dp"/>
+            android:textColor="@color/white" />
 
 
     </RelativeLayout>
