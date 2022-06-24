@@ -5,6 +5,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.util.Printer;
@@ -26,6 +27,8 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 import com.google.protobuf.Value;
 
 public class UserProfile extends AppCompatActivity {
@@ -35,6 +38,9 @@ public class UserProfile extends AppCompatActivity {
     Button btnSignout, btnEditUser;
     FirebaseAuth mAuth;
     FirebaseFirestore mStore;
+    Uri avatarUrl;
+    FirebaseStorage firebaseStorage;
+    StorageReference storageReference;
     private String userID;
     private ImageView imageView;
 
@@ -43,6 +49,7 @@ public class UserProfile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_profile);
 
+        imageView = findViewById(R.id.profile_image);
         tvName = findViewById(R.id.tv2_name_user);
         tvNim = findViewById(R.id.tv2_nim_user);
         tvEmail = findViewById(R.id.tv2_email_user);
@@ -53,6 +60,8 @@ public class UserProfile extends AppCompatActivity {
         btnSignout = findViewById(R.id.btn_logout);
         btnEditUser = findViewById(R.id.btn_profile);
 
+        firebaseStorage = FirebaseStorage.getInstance();
+        storageReference = firebaseStorage.getReference();
         mAuth = FirebaseAuth.getInstance();
         mStore = FirebaseFirestore.getInstance();
         userID = mAuth.getCurrentUser().getUid();

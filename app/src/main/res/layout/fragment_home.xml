@@ -55,7 +55,7 @@
             android:layout_marginLeft="20dp"
             android:layout_toRightOf="@id/btn_user_profile"
             android:fontFamily="@font/poppins_semibold"
-            android:text="Jennie Aurelia"
+            android:text=""
             android:textColor="@color/white"
             android:textSize="20sp" />
 
