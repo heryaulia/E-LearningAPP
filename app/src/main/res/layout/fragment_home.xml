@@ -30,8 +30,8 @@
 
         <Button
             android:id="@+id/btn_user_profile"
-            android:layout_width="56dp"
-            android:layout_height="57dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_marginLeft="20dp"
             android:background="@drawable/imgprofilakunsaya"
             android:text="" />
