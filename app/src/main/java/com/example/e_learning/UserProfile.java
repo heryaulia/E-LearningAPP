@@ -15,6 +15,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -31,6 +32,8 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.protobuf.Value;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class UserProfile extends AppCompatActivity {
 
 
@@ -42,14 +45,14 @@ public class UserProfile extends AppCompatActivity {
     FirebaseStorage firebaseStorage;
     StorageReference storageReference;
     private String userID;
-    private ImageView imageView;
+    private CircleImageView profileimageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_profile);
 
-        imageView = findViewById(R.id.profile_image);
+        profileimageView = findViewById(R.id.profile_image);
         tvName = findViewById(R.id.tv2_name_user);
         tvNim = findViewById(R.id.tv2_nim_user);
         tvEmail = findViewById(R.id.tv2_email_user);
@@ -74,10 +77,10 @@ public class UserProfile extends AppCompatActivity {
                 tvNim.setText(value.getString("nim"));
                 tvEmail.setText(value.getString("email"));
 
-                Log.d("Value", String.valueOf(value.getString("email")));
-
+                Glide.with(UserProfile.this).load(value.getString("avatar")).into(profileimageView);
             }
         });
+
 //        if(firebaseUser == null){
 //            Toast.makeText(UserProfile.this,"Something Wrong! user detaits are not available right now", Toast.LENGTH_LONG).show();
 //        }else {
@@ -94,13 +97,10 @@ public class UserProfile extends AppCompatActivity {
             }
         });
 
-
         btnSignout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mAuth.signOut();
                 signOutUser();
-
             }
         });
     }
@@ -124,8 +124,8 @@ public class UserProfile extends AppCompatActivity {
 //    }
 
     private void signOutUser() {
+        FirebaseAuth.getInstance().signOut();
         Intent intent = new Intent(UserProfile.this, Login.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
         finish();
     }

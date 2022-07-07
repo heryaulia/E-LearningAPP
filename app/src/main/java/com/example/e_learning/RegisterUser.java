@@ -133,7 +133,6 @@ public class RegisterUser extends AppCompatActivity {
                                 }
                             });
 
-
 //                            // hide the progress bar
 //                            progressBar.setVisibility(View.GONE);
 
@@ -151,24 +150,13 @@ public class RegisterUser extends AppCompatActivity {
                             }else {
                                 // Registration failed
                                 Toast.makeText(
-                                        getApplicationContext(), "Registration failed!!"
-                                                        + " Please try again later", Toast.LENGTH_LONG).show();
+                                        getApplicationContext(), "Registration failed!!" + " Please try again later", Toast.LENGTH_LONG).show();
 
                             }
-
-
-
-
 //                            // hide the progress bar
 //                            progressBar.setVisibility(View.GONE);
                         }
                     }
                 });
-
-
-
-
-
-
     }
 }

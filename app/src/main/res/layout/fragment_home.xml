@@ -30,7 +30,7 @@
         android:layout_marginHorizontal="20dp"
         android:layout_below="@id/textView22">
 
-        <Button
+        <ImageButton
             android:id="@+id/btn_user_profile"
             android:layout_width="60dp"
             android:layout_height="60dp"

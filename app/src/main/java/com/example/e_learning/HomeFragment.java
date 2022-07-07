@@ -16,8 +16,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.tabs.TabLayout;
 import com.google.firebase.auth.FirebaseAuth;
@@ -33,6 +35,7 @@ import java.util.concurrent.Executor;
 public class HomeFragment extends Fragment {
 
     private TabLayout tabLayout;
+    ImageButton imageButton;
     private ViewPager2 viewPager2;
     private VPAdapter adapter;
     Activity context;
@@ -53,6 +56,7 @@ public class HomeFragment extends Fragment {
         mStore = FirebaseFirestore.getInstance();
         userID = mAuth.getCurrentUser().getUid();
         tvName = view.findViewById(R.id.textView24);
+        imageButton = view.findViewById(R.id.btn_user_profile);
 
         //fetch name from firestore
         final DocumentReference docRef = mStore.collection("Users").document(userID);
@@ -60,6 +64,9 @@ public class HomeFragment extends Fragment {
             @Override
             public void onSuccess(DocumentSnapshot documentSnapshot) {
                 tvName.setText(documentSnapshot.getString("fullName"));
+
+                Glide.with(HomeFragment.this).load("https://firebasestorage.googleapis.com/v0/b/e-learning-6f17a.appspot.com/o/images%2F08af4cab-4f79-47b6-84fe-211e7ee779ff.jpg?alt=media&token=ba1deeaf-f6a8-4bd4-b75f-e5d6991a7b80").into(imageButton);
+
             }
         });
 
@@ -105,8 +112,8 @@ public class HomeFragment extends Fragment {
     @Override
     public void onStart() {
         super.onStart();
-        Button btnUserProfile = (Button) context.findViewById(R.id.btn_user_profile);
-        btnUserProfile.setOnClickListener(new View.OnClickListener() {
+
+        imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context, UserProfile.class);
