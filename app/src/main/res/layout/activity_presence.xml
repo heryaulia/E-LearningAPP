@@ -4,57 +4,65 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_courseactivity"
     tools:context=".PresenceActivity">
 
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="PRESENSI"
-        android:textColor="@color/white"
-        android:textSize="25dp"
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"/>
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/biru">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="PRESENSI"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
 
     <TextView
         android:id="@+id/textView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/textView15"
-        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/relative_layout"
         android:layout_marginTop="50dp"
         android:fontFamily="@font/poppins_semibold"
-        android:text=""
+        android:text="lalalalallala"
         android:textColor="@color/black"
-        android:textSize="20dp" />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:fontFamily="@font/poppins_semibold"
         android:text="Presensi Now"
         android:textColor="@color/black"
         android:textSize="20dp"
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="20dp"
         android:layout_below="@id/textView16"/>
 
     <TextView
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textView17"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="Teori Komputasi"
         android:textColor="@color/black"
-        android:textSize="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="20dp"
-        android:layout_below="@id/textView17"/>
+        android:textSize="20dp" />
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
         android:layout_width="269dp"
         android:layout_height="356dp"
         android:layout_below="@id/textView18"

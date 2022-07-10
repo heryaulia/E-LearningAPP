@@ -4,19 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_courseactivity"
     android:orientation="vertical"
     tools:context=".ViewPresenceActivity">
 
     <RelativeLayout
+        android:id="@+id/relative_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp">
+        android:layout_height="75dp"
+        android:background="@color/biru">
 
         <Button
             android:id="@+id/button4"
             android:layout_width="30dp"
             android:layout_height="30dp"
+            android:layout_marginTop="20dp"
             android:layout_marginStart="20dp"
             android:background="@drawable/ic_back" />
 
@@ -27,6 +28,7 @@
             android:layout_centerHorizontal="true"
             android:fontFamily="@font/poppins_semibold"
             android:text="Presensi"
+            android:layout_marginTop="20dp"
             android:textColor="@color/white"
             android:textSize="25sp" />
 

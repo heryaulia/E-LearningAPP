@@ -5,19 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/bg_courseactivity"
     tools:context=".CourseActivity2">
 
     <RelativeLayout
+        android:id="@+id/relative_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp">
+        android:layout_height="75dp"
+        android:background="@color/biru">
 
         <Button
             android:id="@+id/button4"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/ic_back" />
 
         <TextView
@@ -27,6 +28,7 @@
             android:textColor="@color/white"
             android:text="Course"
             android:textSize="25sp"
+            android:layout_marginTop="20dp"
             android:fontFamily="@font/poppins_semibold"
             android:layout_centerHorizontal="true"/>
 
@@ -38,7 +40,7 @@
         app:cardBackgroundColor="#EEF8FF"
         app:cardCornerRadius="20dp"
         android:elevation="8dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:layout_marginBottom="8dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"

@@ -17,6 +17,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
@@ -35,7 +36,7 @@ import java.util.concurrent.Executor;
 public class HomeFragment extends Fragment {
 
     private TabLayout tabLayout;
-    ImageButton imageButton;
+    ImageView imageView;
     private ViewPager2 viewPager2;
     private VPAdapter adapter;
     Activity context;
@@ -56,7 +57,7 @@ public class HomeFragment extends Fragment {
         mStore = FirebaseFirestore.getInstance();
         userID = mAuth.getCurrentUser().getUid();
         tvName = view.findViewById(R.id.textView24);
-        imageButton = view.findViewById(R.id.btn_user_profile);
+        imageView = view.findViewById(R.id.profile_image);
 
         //fetch name from firestore
         final DocumentReference docRef = mStore.collection("Users").document(userID);
@@ -65,7 +66,7 @@ public class HomeFragment extends Fragment {
             public void onSuccess(DocumentSnapshot documentSnapshot) {
                 tvName.setText(documentSnapshot.getString("fullName"));
 
-                Glide.with(HomeFragment.this).load("https://firebasestorage.googleapis.com/v0/b/e-learning-6f17a.appspot.com/o/images%2F08af4cab-4f79-47b6-84fe-211e7ee779ff.jpg?alt=media&token=ba1deeaf-f6a8-4bd4-b75f-e5d6991a7b80").into(imageButton);
+                Glide.with(context).load(documentSnapshot.getString("avatar")).placeholder(R.drawable.avatar).into(imageView);
 
             }
         });
@@ -113,7 +114,7 @@ public class HomeFragment extends Fragment {
     public void onStart() {
         super.onStart();
 
-        imageButton.setOnClickListener(new View.OnClickListener() {
+        imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context, UserProfile.class);

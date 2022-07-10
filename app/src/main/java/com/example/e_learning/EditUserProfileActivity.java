@@ -18,6 +18,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -68,13 +69,22 @@ public class EditUserProfileActivity extends AppCompatActivity {
         etNama = findViewById(R.id.et_name_edit_user);
         btnSaveData = findViewById(R.id.btn_save_data);
 
+        //Fetch Name and Profile Picture from firestore
+        final DocumentReference docRef = mStore.collection("Users").document(userID);
+        docRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+            @Override
+            public void onSuccess(DocumentSnapshot documentSnapshot) {
+                etNama.setText(documentSnapshot.getString("fullName"));
+                Glide.with(EditUserProfileActivity.this).load(documentSnapshot.getString("avatar")).placeholder(R.drawable.avatar).into(imageView);
+            }
+        });
+
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 choosePicture();
             }
         });
-
 
         btnSaveData.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -114,7 +124,6 @@ public class EditUserProfileActivity extends AppCompatActivity {
             public void onComplete(@NonNull Task<UploadTask.TaskSnapshot> task) {
                 if(task.isSuccessful()) {
 
-//                    Toast.makeText(getApplicationContext(),"Upload Gagal".length())
                 }
             }
         }).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
@@ -124,7 +133,6 @@ public class EditUserProfileActivity extends AppCompatActivity {
                     @Override
                     public void onSuccess(Uri uri) {
                         avatarUrl = String.valueOf(uri);
-
 
                         // Creating an Editor object to edit(write to the file)
                         SharedPreferences.Editor myEdit = sharedPreferences.edit();
@@ -202,7 +210,6 @@ public class EditUserProfileActivity extends AppCompatActivity {
                             Log.e("Avatar", avatar );
 
                             transaction.update(documentReference, "avatar", avatar);
-
                         }
 
                         // Success

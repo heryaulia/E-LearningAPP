@@ -77,23 +77,16 @@ public class UserProfile extends AppCompatActivity {
                 tvNim.setText(value.getString("nim"));
                 tvEmail.setText(value.getString("email"));
 
-                Glide.with(UserProfile.this).load(value.getString("avatar")).into(profileimageView);
+                Glide.with(UserProfile.this).load(value.getString("avatar")).placeholder(R.drawable.avatar).into(profileimageView);
             }
         });
-
-//        if(firebaseUser == null){
-//            Toast.makeText(UserProfile.this,"Something Wrong! user detaits are not available right now", Toast.LENGTH_LONG).show();
-//        }else {
-//            showUserProfile(firebaseUser);
-//        }
-//
-//        tvEmail.setText(firebaseUser.getEmail());
 
         btnEditUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(UserProfile.this, EditUserProfileActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -104,24 +97,6 @@ public class UserProfile extends AppCompatActivity {
             }
         });
     }
-
-//    private void showUserProfile(FirebaseUser firebaseUser) {
-//        String userID = firebaseUser.getUid();
-//
-//        //Extracting user reference from database for regsitered users
-//        DatabaseReference referenceProfile = FirebaseDatabase.getInstance().getReference("Registered Users");
-//        referenceProfile.child(userID).addListenerForSingleValueEvent(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(@NonNull DataSnapshot snapshot) {
-//
-//            }
-//
-//            @Override
-//            public void onCancelled(@NonNull DatabaseError error) {
-//
-//            }
-//        });
-//    }
 
     private void signOutUser() {
         FirebaseAuth.getInstance().signOut();
