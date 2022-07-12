@@ -171,15 +171,17 @@
                 android:layout_marginBottom="30dp">
 
                 <Button
+                    android:id="@+id/button_uploadfile"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
-                    android:text="Upload File"
                     android:background="@drawable/btnonboard3"
                     android:fontFamily="@font/poppins_semibold"
-                    android:textColor="#fff"
-                    android:textAllCaps="false" />
+                    android:text="Upload File"
+                    android:textAllCaps="false"
+                    android:textColor="#fff" />
 
                 <Button
+                    android:id="@+id/button_submit"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/btnonboard3"
