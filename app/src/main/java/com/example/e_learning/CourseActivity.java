@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.CheckedTextView;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -16,7 +17,7 @@ public class CourseActivity extends AppCompatActivity {
 
     TextView textTitle;
     ImageView imageView;
-    CheckedTextView checkedTextView1, checkedTextView2, checkedTextView3, checkedTextView4;
+    CheckBox checkBox, checkBox2, checkBox3, checkBox4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +35,8 @@ public class CourseActivity extends AppCompatActivity {
         imageView.setImageResource(image);
 
 
-        //intent cardview pertama ke course activity 2
+
+        //intent cardview ke course activity 2
         CardView cardView1 = (CardView) findViewById(R.id.cv_course_pertama);
         cardView1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,49 +49,11 @@ public class CourseActivity extends AppCompatActivity {
 
 
         //checked text view
-        checkedTextView1 = findViewById(R.id.checkedTextView);
-        checkedTextView2 = findViewById(R.id.checkedTextView2);
-        checkedTextView3 = findViewById(R.id.checkedTextView3);
-        checkedTextView4 = findViewById(R.id.checkedTextView4);
+        checkBox = findViewById(R.id.checkbox_course);
+        checkBox2 = findViewById(R.id.checkbox_course2);
+        checkBox3 = findViewById(R.id.checkbox_course3);
+        checkBox4 = findViewById(R.id.checkbox_course4);
 
-        checkedTextView1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                checkedTextView1.toggle();
-                if(checkedTextView1.isChecked()){
-                }else {
-                }
-            }
-        });
 
-        checkedTextView2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(checkedTextView2.isChecked()){
-                    checkedTextView2.setChecked(false);
-                }
-                else checkedTextView2.setChecked(true);
-            }
-        });
-
-        checkedTextView3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(checkedTextView3.isChecked()){
-                    checkedTextView3.setChecked(false);
-                }
-                else checkedTextView3.setChecked(true);
-            }
-        });
-
-        checkedTextView4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(checkedTextView4.isChecked()){
-                    checkedTextView4.setChecked(false);
-                }
-                else checkedTextView4.setChecked(true);
-            }
-        });
     }
 }

@@ -82,7 +82,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="10dp"
-                    app:srcCompat="@drawable/img_loading" />
+                    app:srcCompat="@drawable/img_loading2" />
 
             </LinearLayout>
 
@@ -102,8 +102,8 @@
         app:cardMaxElevation="100dp"
         app:cardBackgroundColor="@color/biru">
 
-        <CheckedTextView
-            android:id="@+id/checkedTextView"
+        <CheckBox
+            android:id="@+id/checkbox_course1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
@@ -114,7 +114,8 @@
             android:textColor="@color/white"
             android:layout_gravity="center"
             android:checked="false"
-            android:checkMark="?android:listChoiceIndicatorMultiple"/>
+            android:buttonTint="@color/white"
+            android:layoutDirection="rtl" />
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
@@ -128,8 +129,8 @@
         app:cardMaxElevation="100dp"
         app:cardBackgroundColor="@color/biru">
 
-        <CheckedTextView
-            android:id="@+id/checkedTextView2"
+        <CheckBox
+            android:id="@+id/checkbox_course2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
@@ -140,7 +141,8 @@
             android:textColor="@color/white"
             android:layout_gravity="center"
             android:checked="false"
-            android:checkMark="?android:listChoiceIndicatorMultiple"/>
+            android:buttonTint="@color/white"
+            android:layoutDirection="rtl" />
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
@@ -154,8 +156,8 @@
         app:cardMaxElevation="100dp"
         app:cardBackgroundColor="@color/biru">
 
-        <CheckedTextView
-            android:id="@+id/checkedTextView3"
+        <CheckBox
+            android:id="@+id/checkbox_course3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
@@ -166,7 +168,8 @@
             android:textColor="@color/white"
             android:layout_gravity="center"
             android:checked="false"
-            android:checkMark="?android:listChoiceIndicatorMultiple"/>
+            android:buttonTint="@color/white"
+            android:layoutDirection="rtl" />
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
@@ -180,8 +183,8 @@
         app:cardMaxElevation="100dp"
         app:cardBackgroundColor="@color/biru">
 
-        <CheckedTextView
-            android:id="@+id/checkedTextView4"
+        <CheckBox
+            android:id="@+id/checkbox_course4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
@@ -192,7 +195,8 @@
             android:textColor="@color/white"
             android:layout_gravity="center"
             android:checked="false"
-            android:checkMark="?android:listChoiceIndicatorMultiple"/>
+            android:buttonTint="@color/white"
+            android:layoutDirection="rtl" />
     </com.google.android.material.card.MaterialCardView>
 
 </LinearLayout>
