@@ -32,8 +32,8 @@ public class OnBoarding extends AppCompatActivity {
 
     private ArrayList<PaperOnboardingPage> getDataForOnBoarding() {
 
-        PaperOnboardingPage src1 = new PaperOnboardingPage("E-Learning Merupakan Sistem Layanan Pembelajaran Offline dan Online. E-Learning Melayani Pembelajaran mahasiswa dan Absensi Online.                     ", "", Color.parseColor("#ffffff"), R.drawable.imgonboarding2, R.drawable.indicator_selected);
-        PaperOnboardingPage src2 = new PaperOnboardingPage("App E-Learning Ini Merupakan Pengembangan dari Web E-learning Universitas Pattimura yang dilakukan  oleh Mahasiswa Studi Independen Nongsa Digital Park .", "", Color.parseColor("#ffffff"), R.drawable.imgonboarding3, R.drawable.indicator_selected);
+        PaperOnboardingPage src1 = new PaperOnboardingPage("E-Kampus-Ku merupakan sistem layanan pembelajaran offline dan online. E-Learning melayani pembelajaran dan pelatihan mahasiswa, dosen, dan tenaga kependidikan.", "", Color.parseColor("#ffffff"), R.drawable.imgonboarding2, R.drawable.indicator_selected);
+        PaperOnboardingPage src2 = new PaperOnboardingPage("App E-KampusKu ini merupakan pengembangan dari web E-learning Universitas  yang dilakukan  oleh Mahasiswa Studi Independen nongsa digital park .    ", "", Color.parseColor("#ffffff"), R.drawable.imgonboarding3, R.drawable.indicator_selected);
 
         ArrayList<PaperOnboardingPage> elements = new ArrayList<>();
         elements.add(src1);

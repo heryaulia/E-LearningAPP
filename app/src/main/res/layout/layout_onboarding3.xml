@@ -12,9 +12,10 @@
         android:fontFamily="@font/poppins_medium"
         android:paddingLeft="30dp"
         android:paddingRight="30dp"
-        android:text="App E-Learning ini merupakan pengembangan dari web E-learning Universitas Pattimura yang dilakukan  oleh Mahasiswa Studi Independen nongsa digital park .    "
+        android:text="App E-KampusKu ini merupakan pengembangan dari web E-learning Universitas  yang dilakukan  oleh Mahasiswa Studi Independen nongsa digital park .    "
         android:textColor="@color/black"
         android:textSize="20dp"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -28,7 +29,7 @@
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/imgonboarding3"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="16dp" />
+        tools:layout_editor_absoluteY="104dp" />
 
     <Button
         android:id="@+id/button"
